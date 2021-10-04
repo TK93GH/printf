@@ -2,7 +2,7 @@
 #define MAIN_H
 
 /* needed header files for printf */
-#include <stdard.h>
+#include <stdarg.h>
 #include <stdlib.h>
 #include <unistd.h>
 
