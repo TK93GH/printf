@@ -21,6 +21,8 @@ char *itob(va_list list);
 char *_strcpy(char *dest, char *src);
 int _strlen(char *s);
 char *rot13(va_list list);
+char *create_buffer(void);
+void write_buffer(char *buffer, int len, va_list list);
 
 /**
  * struct types - struct function
