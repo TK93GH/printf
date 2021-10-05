@@ -19,4 +19,16 @@ char* (*get_func(char i))(va_list);
 char *print_rev(va_list list);
 char *itob(va_list list);
 
+/**
+ * struct types - struct function
+ * @id: struct identifier
+ * @func: pointer to function
+ */
+
+typedef struct types
+{
+	char id;
+	char* (*func)(va_list);
+}print;
+
 #endif
