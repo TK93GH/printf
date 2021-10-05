@@ -10,10 +10,11 @@ char* (*get_func(char i))(va_list)
 	int k = 0;
 
 	print keys[] = {
-		{'c', print_c},
+		{'c', print_char},
 		{'s', print_str},
-		{'d', print_d},
-		{'i', print_d},
+		{'d', print_dec},
+		{'i', print_dec},
+		{'o', print_octal},
 		{'\0', NULL}
 	};
 
