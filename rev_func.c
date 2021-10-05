@@ -2,8 +2,9 @@
 
 /**
  * print_rev - print the reversed string
+ * @list: holds values
  *
- * Return ();
+ * Return: reversed string
  */
 char *print_rev(va_list list)
 {
@@ -23,6 +24,4 @@ char *print_rev(va_list list)
 	rev[i] = '\0';
 	return (rev);
 
-	// add loop condition here
-	// added print reverse string validation but missing condition
 }
