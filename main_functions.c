@@ -5,9 +5,10 @@
  *@list: char
  * Return: String version of char
  */
-int *print_char(va_list list)
+char *print_char(va_list list)
 {
-	char *s, c;
+	char *s;
+	char c;
 
 	c = va_arg(list, int);
 
@@ -52,9 +53,9 @@ char *print_str(va_list list)
  *@div: division
  * Return: i
  */
-char *print_i(int len, int n, int div)
+char *print_i(int div, int len, int n)
 {
-	char *s;
+	char *str;
 	int i = 0;
 
 	str = malloc(sizeof(char) * len + 2);
@@ -91,13 +92,13 @@ char *print_i(int len, int n, int div)
  */
 int *print_dec(va_list list)
 {
-	int n, div = 1, len = 0;
+	int n = 0, div = 1, len = 0;
 	int tmp = n;
 
 	if (n == 0)
 	{
 		len++;
-		return (print_i(len, n, div));
+		return (print_i(div, len, n));
 	}
 	while (tmp != 0)
 	{
@@ -107,5 +108,5 @@ int *print_dec(va_list list)
 		tmp /= 10;
 	}
 
-	return (print_i(len, n, div));
+	return (print_i(div, len, n));
 }

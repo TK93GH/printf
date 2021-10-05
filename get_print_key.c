@@ -15,16 +15,15 @@ char* (*get_func(char i))(va_list)
 		{'d', print_dec},
 		{'i', print_dec},
 		{'o', print_octal},
-		{'b', print_binary},
+		{'b', itob},
 		{'r', print_rev},
 		{'R', rot13},
-		{''},
 		{'\0', NULL}
 	};
 
-	while (keys.[k].id != '\0')
+	while (keys[k].id != '\0')
 	{
-		if (keys[keys].id == i)
+		if (keys[k].id == i)
 			return (keys[k].func);
 		k++;
 	}

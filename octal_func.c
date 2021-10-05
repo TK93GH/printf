@@ -7,8 +7,12 @@
  */
 char *print_octal(va_list list)
 {
-	int j = 0, conv = 1, i, k;
+	int j = 0, conv = 1;
+	int i, k;
 	char *s;
+
+	k = va_arg(list, int);
+	i = k;
 
 	s = malloc(sizeof(char) * 12);
 	if (s == NULL)
