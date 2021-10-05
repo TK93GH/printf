@@ -2,8 +2,8 @@
 
 /**
  * print_octal - changes int to octal using base 8
- * @list - holds info of variable
- * Return - Octal string
+ * @list: holds info of variable
+ * Return: Octal string
  */
 char *print_octal(va_list list)
 {

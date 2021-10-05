@@ -93,7 +93,7 @@ int *print_dec(va_list list)
 {
 	int n, div = 1, len = 0;
 	int tmp = n;
-	
+
 	if (n == 0)
 	{
 		len++;
@@ -106,6 +106,6 @@ int *print_dec(va_list list)
 			div *= 10;
 		tmp /= 10;
 	}
-	
+
 	return (print_i(len, n, div));
 }

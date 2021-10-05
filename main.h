@@ -32,6 +32,6 @@ typedef struct types
 {
 	char id;
 	char* (*func)(va_list);
-}print;
+} print;
 
 #endif
