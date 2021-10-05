@@ -89,7 +89,7 @@ char *print_i(int len, int n, int div)
  *
  * Return: d is same as i
  */
-int print_dec(va_list list)
+int *print_dec(va_list list)
 {
 	int n, div = 1, len = 0;
 	int tmp = n;
