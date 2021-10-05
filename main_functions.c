@@ -1,9 +1,9 @@
 #include "main.h"
 
 /**
- * print_char -
- *
- * Return: char
+ * print_char - returns char as string
+ *@list: char
+ * Return: String version of char
  */
 int *print_char(va_list list)
 {
@@ -24,8 +24,8 @@ int *print_char(va_list list)
 }
 
 /**
- * print_str -
- *
+ * print_str - takes string and return string
+ *@list: string
  * Return: string
  */
 char *print_str(va_list list)
@@ -46,9 +46,10 @@ char *print_str(va_list list)
 }
 
 /**
- * print_i -
- *
- *
+ * print_i - prints signed decimal integer
+ *@len: length
+ *@n: signed integer to be printed
+ *@div: division
  * Return: i
  */
 char *print_i(int len, int n, int div)
@@ -84,9 +85,8 @@ char *print_i(int len, int n, int div)
 }
 
 /**
- * print_dec -
- *
- *
+ * print_dec - prints signed decimal integer
+ *@list: decimal
  * Return: d is same as i
  */
 int *print_dec(va_list list)
