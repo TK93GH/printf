@@ -16,5 +16,7 @@ char *print_i(int len, int n, int div);
 int *print_dec(va_list list);
 char *print_octal(va_list list);
 char* (*get_func(char i))(va_list);
+char *print_rev(va_list list);
+char *itob(va_list list);
 
 #endif
