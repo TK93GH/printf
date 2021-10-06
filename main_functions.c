@@ -90,10 +90,14 @@ char *print_i(int div, int len, int n)
  *@list: decimal
  * Return: d is same as i
  */
-int *print_dec(va_list list)
+char *print_dec(va_list list)
 {
-	int n = 0, div = 1, len = 0;
-	int tmp = n;
+	int n, div, len, tmp;
+
+	n = va_arg(list, int);
+	tmp = n;
+	len = 0;
+	div = 1;
 
 	if (n == 0)
 	{
