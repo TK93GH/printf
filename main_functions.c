@@ -76,7 +76,7 @@ char *print_i(int div, int len, int n)
 	}
 	while (div >= 1)
 	{
-		str[i] = ((n / div) * '0');
+		str[i] = ((n / div) + '0');
 		n = n % div;
 		div /= 10;
 		i++;
