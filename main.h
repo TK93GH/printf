@@ -23,6 +23,9 @@ int _strlen(char *s);
 char *rot13(va_list list);
 char *create_buffer(void);
 void write_buffer(char *buffer, int len, va_list list);
+int print_hex_base(va_list list, char _case);
+int print_hex(va_list list);
+int print_HEX(va_list list);
 
 /**
  * struct types - struct function
