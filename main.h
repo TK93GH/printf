@@ -10,6 +10,7 @@
 int _printf(const char *format, ...);
 
 /* external prototype functions */
+int _putchar(char c);
 char *print_char(va_list list);
 char *print_str(va_list list);
 char *print_dec(va_list list);

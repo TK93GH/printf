@@ -7,7 +7,7 @@
  */
 char *print_octal(va_list list)
 {
-	int j = 0, conv = 1;
+	int j = 0, eights = 1;
 	int i, k;
 	char *s;
 
@@ -29,14 +29,16 @@ char *print_octal(va_list list)
 	while (k > 1)
 	{
 		k /= 8;
-		conv *= 8;
+		eights *= 8;
 	}
-	while (conv > 0)
+
+	while (eights > 0)
 	{
-		s[j++] = (i / conv + '0');
-		i %= conv;
-		conv /= 8;
+		s[j++] = (i / eights + '0');
+		i %= eights;
+		eights /= 8;
 	}
 	s[j] = '\0';
+
 	return (s);
 }

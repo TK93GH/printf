@@ -8,25 +8,25 @@
  */
 char *print_rev(va_list list)
 {
-	char *rev, *str;
-	int len, i = 0, j;
+        char *rev;
+	char *str;
+	int i = 0, len, j;
 
 	str = va_arg(list, char *);
-		if (str == NULL)
-			str = "(NULL)";
+	if (str == NULL)
+		str = "(null)";
 
 	len = _strlen(str);
 
-	rev = malloc(sizeof(char) * len + 1);
+	rev = malloc(sizeof(char) * (len + 1));
 	if (rev == NULL)
 		return (NULL);
 
-	for(j = (len - 1); j > 0; j--)
+	for(j = (len - 1); j >= 0; j--)
 	{
 		rev[i++] = str[j];
 	}
-
 	rev[i] = '\0';
-	return (rev);
 
+	return (rev);
 }
