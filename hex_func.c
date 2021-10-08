@@ -6,7 +6,7 @@
  * @_case: a in caps on lower, printing the hex number in caps in lower
  * Return: number of digits printed
  */
-int print_hex_base(va_list list, char _case)
+char *print_hex_base(va_list list, char _case)
 {
 	unsigned int num = va_list(list, unsigned int);
 	int nbrCharacters;
@@ -23,7 +23,7 @@ int print_hex_base(va_list list, char _case)
  * @list: list that contains hexadecimal to print
  * Return: number of digits printed
  */
-int print_hex(va_list list)
+char *print_hex(va_list list)
 {
 	return (print_hex_base(list, 'a'));
 }
@@ -34,7 +34,7 @@ int print_hex(va_list list)
  * Return: number of characters printed
  */
 
-int print_HEX(va_list list)
+char *print_HEX(va_list list)
 {
 	return (print_hex_base(list, 'A'));
 }

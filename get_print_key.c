@@ -18,8 +18,8 @@ char* (*get_func(char i))(va_list)
 		{'b', itob},
 		{'r', print_rev},
 		{'R', rot13},
-		{'x', print_hex}
-		{'X', print_HEX}
+		{'x', print_hex},
+		{'X', print_HEX},
 		{'\0', NULL}
 	};
 
